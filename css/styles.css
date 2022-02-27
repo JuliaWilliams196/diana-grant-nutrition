@@ -171,39 +171,7 @@ figure {
   width: 90%;
   margin: 50px 0;
 }
-.services-section {
-  background: url("../img/broth.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-.services-section p {
-  color: #ffffff;
-}
-.services-section h2 {
-  text-align: center;
-  color: #ffffff;
-}
-.testimonials-section {
-  background-color: #fcefe9;
-}
-.testimonials-section div {
-  width: 100%;
-  height: 200px;
-  text-align: center;
-}
-footer {
-  background-image: url('../img/theanine-green-tea.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #ffffff;
-  width: 100%;
-  height: 500px;
-
-}
-/*Hamburger Menu NavBar*/
+/*HAMBURGER NAVBAR*/
 #menu__toggle {
   opacity: 0;
 }
@@ -254,7 +222,6 @@ footer {
   top: 0;
   right: -100%;
   width: 300px;
-  height: 20%;
   margin: 0;
   padding: 80px 0;
   list-style: none;
@@ -275,7 +242,197 @@ footer {
 }
 .menu__item:hover {
   background-color: #fcefe9;
+} /**END OF NAVBAR**/
+/*ABOUT SECTION*/
+/*SERVICES SECTION*/
+.services-section {
+  background: url("../img/broth.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
+.services-section p {
+  color: #ffffff;
+}
+.services-section h2 {
+  text-align: center;
+  color: #ffffff;
+}
+.services-section h3 {
+  text-align: center;
+  color: #ffffff;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.features-item-description {
+  font-size: 16px;
+  text-align: left;
+}
+/*TESTIMONIALS SECTION*/
+.testimonials-section {
+  background-color: #fcefe9;
+  width: 100%;
+  height: 500px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/* Features */
+
+.features {
+  background: url("../img/unplugged-retreat-features.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
+.features p {
+  margin: 0;
+}
+
+/* Reviews */
+
+.reviews {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
+}
+
+/* ==========================================================================
+     Contact/Footer Section
+     ========================================================================== */
+footer {
+  background-image: url("../img/theanine-green-tea.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  width: 100%;
+  height: 500px;
+}
+
 footer {
   background-color: white;
   display: flex;
@@ -322,132 +479,6 @@ footer .social-icons p i {
 footer .copyright {
   margin: 20px 0;
 }
-
-/* -------------------- Mobile Styles - Homepage -------------------- */
-
-/* Hero Area */
-
-.hero-area {
-  background: url(../img/unplugged-retreat.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 500px;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-.hero-area h1 {
-  font-size: 2.25em;
-  font-family: "Poppins", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-/* Aside */
-
-aside {
-  background-color: #527158;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-aside .form {
-  margin-top: 30px;
-}
-
-input[type="text"] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
-
-input[type="button"] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: "Poppins", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-/* Features */
-
-.features {
-  background: url("../img/unplugged-retreat-features.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-.features h2 {
-  margin-bottom: 60px;
-}
-
-.features article {
-  width: 63%;
-  margin: 30px 0;
-}
-
-.features .features-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.features i {
-  font-size: 3.75em;
-  margin-bottom: 40px;
-}
-
-.features p {
-  text-align: center;
-  margin: 0;
-}
-
-/* Reviews */
-
-.reviews {
-  background-color: #2a423a;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-.reviews h2 {
-  margin-bottom: 40px;
-  line-height: 1;
-}
-
-.reviews h3 {
-  width: 55%;
-  margin: 20px 0;
-}
-
-/* ==========================================================================
-     About Page
-     ========================================================================== */
-
-.mission {
-  background-color: #527158;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
 .map figure {
   width: 100%;
   height: 0;

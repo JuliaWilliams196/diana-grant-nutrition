@@ -100,24 +100,25 @@ textarea {
 /* General Styles */
 
 html {
-  background-color: #fcefe9;
+  background-color: #ffffff;
   font-size: 16px;
+width: 100%;
 }
 header {
   background-image: url("../img/Black-logo-no-background.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  height: 200px;
+  background-position: center;
+  margin: auto;
   background-color: white;
 }
 body {
   font-size: 1em;
   font-family: "Open Sans", sans-serif;
   text-align: left;
+  width: 100%;
 }
 ul,
 ol {
@@ -244,6 +245,27 @@ figure {
   background-color: #fcefe9;
 } /**END OF NAVBAR**/
 /*ABOUT SECTION*/
+.profile-picture {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.about-me {
+  text-align: center;
+  background-color: #fcefe9;
+  margin: 0;
+  width: 100%;
+}
+.about-nutrition {
+  background-color: #fcefe9;
+  margin: 0;
+  width: 100%;
+}
+.about-me.about-nutrition p {
+  margin: 0 !important;
+}
 /*SERVICES SECTION*/
 .services-section {
   background: url("../img/broth.jpg");
@@ -252,6 +274,7 @@ figure {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+width: 100%;
 }
 .services-section p {
   color: #ffffff;
@@ -263,6 +286,7 @@ figure {
 .services-section h3 {
   text-align: center;
   color: #ffffff;
+  margin: 10px 20px;
 }
 .icon {
   display: flex;
@@ -375,10 +399,6 @@ figure {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-}
-
-.features h2 {
-  margin-bottom: 60px;
 }
 
 .features article {
@@ -601,8 +621,7 @@ footer .copyright {
 
   /* General styles */
   .content-wrapper {
-    max-width: 640px;
-    margin: 100px 0;
+    max-width: 100%;
   }
 
   h2 {

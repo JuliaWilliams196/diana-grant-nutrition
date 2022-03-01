@@ -120,16 +120,7 @@ body {
   text-align: left;
   width: 100%;
 }
-ul,
-ol {
-  list-style-type: circle;
-  margin: 0;
-  color: #ffffff;
-  padding: 10px 0 20px 0;
-}
-li {
-  list-style-type: disc;
-}
+
 a {
   color: #e2e3ed;
   text-decoration: none;
@@ -290,9 +281,7 @@ figure {
   width: 100%;
   padding: 0px 45px;
 }
-.about-nutrition li {
-  list-style-type: none;
-}
+
 /*SERVICES SECTION*/
 .services-section {
   background: url("../img/broth.jpg");
@@ -316,8 +305,12 @@ figure {
   margin: 10px 20px;
 }
 .services-section h4 {
-  color: #a3b899;
+  display: inline;
+  list-style: none;
+  color: #dde5d5;
+  padding: 25px 0;
 }
+
 .icon {
   display: flex;
   justify-content: center;
@@ -330,6 +323,10 @@ figure {
   font-size: 16px;
   text-align: left;
 }
+.features-item-list {
+  color: white !important;
+}
+
 /*TESTIMONIALS SECTION*/
 .testimonials-section {
   background-color: #fcefe9;
@@ -339,99 +336,62 @@ figure {
 * {
   box-sizing: border-box;
 }
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
+section {
   text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
+  margin-top: 2.5%;
 }
+.scroll-arrow {
+  width: 10%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    padding:0;
+    margin:0;
+    opacity: 0.5;
+  font-size:34px;
+  transition: 0.2s;
+}
+.scroll-arrow:hover {
+  transition: 0.2s;
+  opacity:1;
+}
+  ul {
+    width: 70%;
+    scroll-behavior: smooth;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+    ul::-webkit-scrollbar {
+    display: none;
+  }
+  li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    filter: grayscale(100%);
+      transition: 0.2s;
+  }
+li, img {
+  width: 500px;
+}
+  li:hover {
+    transition: 0.2s;
+    filter: grayscale(0);
+  }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
 /* Features */
 
-.features {
-  background: url("../img/unplugged-retreat-features.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
 
 .features article {
   width: 63%;
@@ -494,43 +454,36 @@ footer {
   text-align: center;
   flex-direction: column;
 }
-
-footer p {
-  margin: 0;
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-footer .content-wrapper {
-  width: 55%;
-  margin: 50px 0;
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-footer .contact {
-  margin-bottom: 50px;
+input[type=submit]:hover {
+  background-color: #45a049;
 }
 
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
-footer .social-icons p {
-  background-color: #527158;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .social-icons p i {
-  font-size: 1.3125em;
-}
-
-footer .copyright {
-  margin: 20px 0;
-}
 .map figure {
   width: 100%;
   height: 0;
@@ -668,6 +621,7 @@ footer .copyright {
   }
   .flex-container {
     display: flex;
+    display: list-item;
     justify-content: left;
     flex-flow: row wrap;
     columns: 30px 5;
@@ -683,6 +637,16 @@ footer .copyright {
     margin: 0;
     flex-basis: 33%;
     width: 100%;
+    color: #ffffff;
+    list-style-type: disc;
+  }
+  .features-item-list {
+    color: white !important;
+  }
+  .prices {
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 2em;
   }
   .profile-picture {
     width: 300px;
@@ -858,16 +822,16 @@ footer .copyright {
   }
 
   h2 {
-    font-size: 2.25em;
+    font-size: 2em;
   }
 
   h3,
   h4 {
-    font-size: 1.875em;
+    font-size: 1.25em;
   }
 
   p {
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 2;
   }
   .flex-container {

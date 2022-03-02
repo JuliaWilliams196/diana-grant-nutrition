@@ -416,10 +416,7 @@ label {
 img {
   width: 500px;
 }
-.testimonials-section-gallery li:hover {
-  transition: 0.2s;
-  filter: grayscale(0);
-}
+
 
 /* Features */
 

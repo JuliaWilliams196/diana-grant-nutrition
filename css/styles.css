@@ -120,7 +120,9 @@ body {
   text-align: left;
   width: 100%;
 }
-
+address {
+  font-style: normal;
+}
 a {
   color: #e2e3ed;
   text-decoration: none;
@@ -476,8 +478,23 @@ footer {
   align-items: center;
   flex-flow: column wrap;
 }
-.footer-link{
+.footer-link {
   color: #ffffff;
+}
+.footer-info {
+  color: #ffffff;
+  font-size: 1em;
+  line-height: 2;
+  padding: 0 30px;
+}
+.footer-info-phone {
+  text-align: center;
+  color: #ffffff;
+}
+.footer-info-list {
+  text-align: left;
+  color: #ffffff;
+  padding: 0 40px 0 0; 
 }
 /* ==========================================================================
      Helper classes
@@ -618,32 +635,25 @@ footer {
     width: 300px;
     height: 300px;
   }
-  /* Hero Area */
-
-  .hero-area {
-    min-height: 600px;
+  iframe {
+    width: 300px;
+    height: 400px;
   }
-
-  .hero-area h1 {
-    font-size: 3em;
-    line-height: 1;
-    margin: 0;
+  .footer-info {
+    color: #ffffff;
+    padding: 0 40px;
+    font-size: 1.25em;
   }
-
-  /* Aside */
-  aside .content-wrapper {
-    margin: 50px 0;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
+  .footer-info-phone {
+    text-align: center;
+    color: #ffffff;
   }
-
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
-    width: 40%;
-    margin: 0;
+  .footer-info-list {
+    text-align: left;
+    color: #ffffff;
+    padding: 0 40px;
+    font-size: 1.25em;
   }
-
   /* Features */
 
   .features h2 {
@@ -830,21 +840,21 @@ footer {
     font-size: 3.75em;
     width: 80%;
   }
-
-  /* Aside */
-  aside .content-wrapper {
-    justify-content: space-around;
+  .footer-info {
+    text-align: center;
+    font-size: 1.5em;
   }
-
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
-    width: 30%;
+  .footer-info-phone {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5em;
   }
-
-  .form-description p {
-    font-size: 1.125em;
+  .footer-info-list {
+    text-align: left;
+    color: #ffffff;
+    padding: 0 40px;
+    font-size: 1.25em;
   }
-
   /* Features */
 
   .features h2 {
@@ -853,16 +863,6 @@ footer {
 
   .features article {
     flex-basis: 33%;
-  }
-
-  /* Reviews */
-
-  .reviews h2 {
-    padding-bottom: 50px;
-  }
-
-  .reviews article div {
-    width: 42%;
   }
 
   footer h4 {
@@ -885,21 +885,6 @@ footer {
   .contact-content h4 {
     font-size: 1.875em;
   }
-
-  /* ==========================================================================
-    FAQ Page
-    ========================================================================== */
-  .faq h2 {
-    width: 100%;
-    font-size: 3em;
-  }
-
-  .faq h4,
-  .faq p {
-    font-size: 1.125em;
-    line-height: 1;
-  }
-}
 
 /* ==========================================================================
      Print styles.

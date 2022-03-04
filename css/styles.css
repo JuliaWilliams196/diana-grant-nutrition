@@ -290,7 +290,9 @@ figure {
   width: 100%;
   padding: 0px 45px;
 }
-
+.flex-container{
+color: #667b68;
+}
 /*SERVICES SECTION*/
 .services-section {
   background: url("../img/broth.jpg");
@@ -332,7 +334,7 @@ label {
   font-size: 1.25em;
 }
 
-#section-0:checked ~ #section-0 > article {
+#section-0:checked ~ #section-0 > div {
   display: block;
   visibility: visible;
 }
@@ -341,6 +343,18 @@ label {
   visibility: visible;
 }
 #section-2:checked ~ #section-2 > div {
+  display: block;
+  visibility: visible;
+}
+#section-3:checked ~ #section-3 > div {
+  display: block;
+  visibility: visible;
+}
+#section-4:checked ~ #section-4 > div {
+  display: block;
+  visibility: visible;
+}
+#section-5:checked ~ #section-5 > div {
   display: block;
   visibility: visible;
 }
@@ -589,6 +603,10 @@ footer {
   /*Tablet styles here*/
 
   /* General styles */
+
+  ul {
+    list-style-type: none;
+  }
   .content-wrapper {
     max-width: 100%;
   }
@@ -604,7 +622,6 @@ footer {
   }
   .flex-container {
     display: flex;
-    display: list-item;
     justify-content: left;
     flex-flow: row wrap;
     columns: 30px 5;
@@ -621,7 +638,7 @@ footer {
     flex-basis: 33%;
     width: 100%;
     color: #ffffff;
-    list-style-type: disc;
+  
   }
   .features-item-list {
     color: white !important;

@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -161,9 +161,6 @@ p {
   text-align: center;
 }
 
-figure {
-  margin: 0;
-}
 .icon-footer {
   display: flex;
   justify-content: center;
@@ -173,10 +170,7 @@ figure {
   width: 60px;
   height: 60px;
 }
-.content-wrapper {
-  width: 90%;
-  margin: 50px 0;
-}
+
 /*HAMBURGER NAVBAR*/
 #menu__toggle {
   opacity: 0;
@@ -290,8 +284,8 @@ figure {
   width: 100%;
   padding: 0px 45px;
 }
-.flex-container{
-color: #667b68;
+.flex-container {
+  color: #667b68;
 }
 /*SERVICES SECTION*/
 .services-section {
@@ -300,7 +294,6 @@ color: #667b68;
   background-position: center;
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
   width: 100%;
 }
 .services-section p {
@@ -358,6 +351,10 @@ label {
   display: block;
   visibility: visible;
 }
+#section-6:checked ~ #section-6 > div {
+  display: block;
+  visibility: visible;
+}
 .icon {
   display: flex;
   justify-content: center;
@@ -367,13 +364,26 @@ label {
   height: 100px;
 }
 .features-item-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
-  text-align: left;
+  text-align: center;
 }
 .features-item-list {
   color: white !important;
 }
 
+.features article {
+  margin: 30px 0;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 /*TESTIMONIALS SECTION*/
 .testimonials-section {
   background-color: #fcefe9;
@@ -433,29 +443,6 @@ img {
   width: 500px;
 }
 
-/* Features */
-
-.features article {
-  width: 63%;
-  margin: 30px 0;
-}
-
-.features .features-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.features i {
-  font-size: 3.75em;
-  margin-bottom: 40px;
-}
-
-.features p {
-  margin: 0;
-}
-
 /* ==========================================================================
      Contact/Footer Section
      ========================================================================== */
@@ -508,8 +495,9 @@ footer {
 .footer-info-list {
   text-align: left;
   color: #ffffff;
-  padding: 0 40px 0 0; 
+  padding: 0 40px 0 0;
 }
+
 /* ==========================================================================
      Helper classes
      ========================================================================== */
@@ -603,12 +591,9 @@ footer {
   /*Tablet styles here*/
 
   /* General styles */
-
-  ul {
-    list-style-type: none;
-  }
   .content-wrapper {
-    max-width: 100%;
+    max-width: 640px;
+    margin: 100px 0;
   }
 
   h2 {
@@ -638,7 +623,6 @@ footer {
     flex-basis: 33%;
     width: 100%;
     color: #ffffff;
-  
   }
   .features-item-list {
     color: white !important;
@@ -671,12 +655,7 @@ footer {
     padding: 0 40px;
     font-size: 1.25em;
   }
-  /* Features */
-
-  .features h2 {
-    margin-bottom: 20px;
-  }
-
+  /* Services Section */
   .features article {
     display: flex;
     justify-content: center;
@@ -689,29 +668,6 @@ footer {
     width: 62%;
   }
 
-  .features i {
-    margin-bottom: 30px;
-  }
-
-  /* Reviews */
-  .reviews article {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .reviews h2 {
-    width: 85%;
-  }
-
-  .reviews article figure,
-  .reviews article div {
-    width: 49%;
-  }
-
-  .reviews h3 {
-    width: 75%;
-    margin: 0;
-  }
   /* Footer */
   footer .content-wrapper {
     width: 65%;
@@ -747,224 +703,166 @@ footer {
     width: 100%;
   }
 
-  /* ==========================================================================
-     About Page
-     ========================================================================== */
+  @media only screen and (min-width: 1000px) {
+    /*Desktop styles here*/
 
-  .mission-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-  }
+    header {
+      padding: 15px 0;
+    }
 
-  .mission-content p {
-    width: 45%;
-  }
+    .content-wrapper {
+      max-width: 960px;
+    }
 
-  .map figure {
-    padding-bottom: 45.5%;
-  }
+    h2 {
+      font-size: 2em;
+    }
 
-  .contact-section .content-wrapper h2 {
-    width: 80%;
-  }
+    h3,
+    h4 {
+      font-size: 1.25em;
+    }
 
-  .contact-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+    p {
+      font-size: 1em;
+      line-height: 2;
+    }
+    .flex-container {
+      display: flex;
+      justify-content: left;
+      flex-flow: row wrap;
+      columns: 30px 5;
+      width: 100%;
+    }
+    .flex-item {
+      display: table-cell;
+      justify-content: left;
+      flex-flow: row wrap;
+      flex-direction: column;
+      flex: 1;
+      padding: 16px;
+      margin: 0;
+      flex-basis: 33%;
+      width: 100%;
+    }
+    .profile-picture {
+      width: 400px;
+      height: 400px;
+    }
+    .profile-picture-badge {
+      display: none;
+    }
+    /* Hero */
+    .hero-area h1 {
+      font-size: 3.75em;
+      width: 80%;
+    }
+    .footer-info {
+      text-align: center;
+      font-size: 1.5em;
+    }
+    .footer-info-phone {
+      text-align: center;
+      color: #ffffff;
+      font-size: 1.5em;
+    }
+    .footer-info-list {
+      text-align: left;
+      color: #ffffff;
+      padding: 0 40px;
+      font-size: 1.25em;
+    }
+    /* Features */
 
-  .contact-content h4 {
-    font-size: 1.5em;
-  }
+    .features article {
+      flex-basis: 33%;
+    }
 
-  /* ==========================================================================
-     FAQ Page
-     ========================================================================== */
+    footer h4 {
+      font-size: 1.875em;
+    }
 
-  .faq .content-wrapper {
-    justify-content: space-between;
-  }
-
-  .faq-content {
-    flex-basis: 45%;
-  }
-
-  .faq h2 {
-    width: 100%;
-  }
-
-  .faq h4,
-  .faq p {
-    font-size: 0.875em;
-    line-height: 1.125;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  /*Desktop styles here*/
-
-  header {
-    padding: 15px 0;
-  }
-
-  .content-wrapper {
-    max-width: 960px;
-  }
-
-  h2 {
-    font-size: 2em;
-  }
-
-  h3,
-  h4 {
-    font-size: 1.25em;
-  }
-
-  p {
-    font-size: 1em;
-    line-height: 2;
-  }
-  .flex-container {
-    display: flex;
-    justify-content: left;
-    flex-flow: row wrap;
-    columns: 30px 5;
-    width: 100%;
-  }
-  .flex-item {
-    display: table-cell;
-    justify-content: left;
-    flex-flow: row wrap;
-    flex-direction: column;
-    flex: 1;
-    padding: 16px;
-    margin: 0;
-    flex-basis: 33%;
-    width: 100%;
-  }
-  .profile-picture {
-    width: 400px;
-    height: 400px;
-  }
-  .profile-picture-badge {
-    display: none;
-  }
-  /* Hero */
-  .hero-area h1 {
-    font-size: 3.75em;
-    width: 80%;
-  }
-  .footer-info {
-    text-align: center;
-    font-size: 1.5em;
-  }
-  .footer-info-phone {
-    text-align: center;
-    color: #ffffff;
-    font-size: 1.5em;
-  }
-  .footer-info-list {
-    text-align: left;
-    color: #ffffff;
-    padding: 0 40px;
-    font-size: 1.25em;
-  }
-  /* Features */
-
-  .features h2 {
-    width: 90%;
-  }
-
-  .features article {
-    flex-basis: 33%;
-  }
-
-  footer h4 {
-    font-size: 1.875em;
-  }
-
-  /* ==========================================================================
+    /* ==========================================================================
     About Page
     ========================================================================== */
-  .map figure {
-    padding-bottom: 37.5%;
-  }
+    .map figure {
+      padding-bottom: 37.5%;
+    }
 
-  .mission h2,
-  .contact-section .content-wrapper h2 {
-    width: 95%;
-    font-size: 3em;
-  }
+    .mission h2,
+    .contact-section .content-wrapper h2 {
+      width: 95%;
+      font-size: 3em;
+    }
 
-  .contact-content h4 {
-    font-size: 1.875em;
-  }
+    .contact-content h4 {
+      font-size: 1.875em;
+    }
 
-/* ==========================================================================
+    /* ==========================================================================
      Print styles.
      Inlined to avoid the additional HTTP request:
      https://www.phpied.com/delay-loading-your-print-css/
      ========================================================================== */
 
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  /*
+    @media print {
+      *,
+      *:before,
+      *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+      }
+      a,
+      a:visited {
+        text-decoration: underline;
+      }
+      a[href]:after {
+        content: " (" attr(href) ")";
+      }
+      abbr[title]:after {
+        content: " (" attr(title) ")";
+      }
+      /*
        * Don't show links that are fragment identifiers,
        * or use the `javascript:` pseudo protocol
        */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-  pre {
-    white-space: pre-wrap !important;
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  /*
+      a[href^="#"]:after,
+      a[href^="javascript:"]:after {
+        content: "";
+      }
+      pre {
+        white-space: pre-wrap !important;
+      }
+      pre,
+      blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+      }
+      /*
        * Printing Tables:
        * http://css-discuss.incutio.com/wiki/Printing_Tables
        */
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
+      thead {
+        display: table-header-group;
+      }
+      tr,
+      img {
+        page-break-inside: avoid;
+      }
+      p,
+      h2,
+      h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2,
+      h3 {
+        page-break-after: avoid;
+      }
+    }
   }
 }

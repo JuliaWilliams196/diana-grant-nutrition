@@ -40,7 +40,7 @@
                 <br>
                 <img class="profile-picture" src="img/diana-face.png" alt="profile-picture" />
                 <caption>
-                    <p>[Teaching with Kung Fu Panda online in China last year. My students loved my online teaching
+                    <p class="caption">[Teaching with Kung Fu Panda online in China last year. My students loved my online teaching
                         partner!]</p>
                 </caption>
                 <br>
@@ -61,7 +61,7 @@
                     difficult it is for the person suffering and their own loved ones.</p>
                 <img class="profile-picture" src="./img/showcase.jpg" alt="diana-and-brother">
                 <caption>
-                    <p>[This is me and my brother during our school's Showcase last year.]</p>
+                    <p class="caption">[This is me and my brother during our school's Showcase last year.]</p>
                 </caption>
                 <br>
                 <p> As a teacher, I have seen many
@@ -80,7 +80,7 @@
                 <p> We dive deep and strive to uncover the root cause(s) of any imbalances or
                     dysfunctions in the body.
                 </p>
-                <h2>Common Reasons to Get Nutritional Counselling</h2>
+                <h2 id="about-nutrition-counselling">Common Reasons to Get Nutritional Counselling</h2>
                 <h3>Some of the most common complaints I hear include:</h3>
                 <ul class="flex-container">
                     <li class="flex-item">
@@ -162,7 +162,7 @@
                         <p>… and more!</p>
                     </li>
                 </ul>
-                <p>All consultations can take place either online, or at my office in Toronto. </p>
+                <p class="caption">All consultations can take place either online, or at my office in Toronto. </p>
             </div>
         </div>
         <div class="services-section">
@@ -186,7 +186,7 @@
                                 <h3>
                                     <label for="section-6" class="sixth-label"><img class="icon"
                                             src="./img/users-solid.png" alt="people-icon">
-                                        FREE Discovery Session
+                                        FREE Consultation
                                 </h3>
                                 <div>
                                     <p class="features-item-description">
@@ -234,7 +234,8 @@
 
                                     </ul>
                                     <h4>$60</h4>
-                                    <p class="features-item-description"><a href="analysis-sample.pdf" download>See the
+                                    <p class="features-item-description"><a href="Nutri-Body-Analysis-Sample.pdf"
+                                            download>See the
                                             sample analysis HERE</a></p>
                                     <h3>Initial Consultation (1-1.5 hours)</h3>
                                     <ul>
@@ -325,8 +326,8 @@
                                     </ul>
                                     <h4>$80</h4>
                                     <br>
-                                    <a href="OptimalDX-FunctionalBloodChemistryAnalysis-SampleReport-Oct-03-2019.pdf"
-                                        download>See sample analysis HERE</a>
+                                    <p><a href="Functional-Blood-Chemistry-Analysis-Sample.pdf" download>See sample
+                                            analysis HERE</a></p>
                                     <h3>Bloodwork Analysis + 30 min. Consultation</h3>
                                     <p class="features-item-description"> We will go over your bloodwork and I will
                                         help you
@@ -402,7 +403,7 @@
                                     </ul>
                                     <h4>$350</h4>
                                     <br>
-                                    <a href="Sample-FIReport.pdf" download>See sample report HERE</a>
+                                    <p><a href="Sample-FIReport.pdf" download>See sample report HERE</a></p>
                                     <h3>IgG Food Intolerance Testing + 30-min. consultation</h3>
                                     <ul>
                                         <li class="features-item-list"> Test antibodies for over 220 foods</li>
@@ -424,32 +425,65 @@
         </div>
         <section class="testimonials-section">
             <h2 id="testimonials">Testimonials</h2>
-            <section class="testimonials-section-gallery">
-                <div class="scroll-arrow" id="scroll-left">
-                    &#8592;
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="./img/testimonial-1.png" style="width:100%">
                 </div>
-                <ul id="imgList">
-                    <li><img src="./img/testimonial-1.png" />
-                    </li>
-                    <li><img src="./img/testimonial-2.png" />
-                    </li>
-                    <li><img src="./img/testimonial-3.png" />
-                    </li>
-                    <li><img src="./img/testimonial-4.png" />
-                    </li>
-                    <li><img src="./img/testimonial-5.png" />
-                    </li>
-                    <li><img src="./img/testimonial-6.png" />
-                    </li>
-                    <li><img src="./img/testimonial-7.png" />
-                    </li>
-                    <li><img src="./img/testimonial-8.png" />
-                    </li>
-                </ul>
-                <div class="scroll-arrow" id="scroll-right" onclick="scrollRight()">
-                    &#8594;
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="./img/testimonial-2.png" style="width:100%">
                 </div>
-            </section>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="./img/testimonial-3.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="./img/testimonial-4.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="./img/testimonial-5.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="./img/testimonial-6.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="./img/testimonial-7.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="./img/testimonial-8.png" style="width:100%">
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+            </div>
         </section>
     </main>
     <footer class="contact-section">
@@ -500,16 +534,15 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.828113809355!2d-79.43429028518277!3d43.776426752472815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2db7d260b971%3A0xd4c723513ff7ed79!2sDiana%20Grant%2C%20Holistic%20Nutritionist!5e0!3m2!1sen!2sca!4v1646244862702!5m2!1sen!2sca"
                 style="width: 200px;
                     height: 200px;
-                    aspect-ratio: 1:1;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                       border-radius: 100%;
                     border-width: thick;
                     border-style: solid;
                     border-color: #ffffff;
                     " allowfullscreen="" loading="lazy"></iframe>
+            <p id="copyright">&copy; Diana Grant Nutrition 2022</p>
+            <p class="copyright">Designed & Coded by Dragonsnap Web Development</p>
         </address>
+
     </footer>
 </body>
 <script>
@@ -522,19 +555,36 @@
             x.style.display = "block";
         }
     }
-    var imgList = document.getElementById('imgList');
-    var scrollRight = document.getElementById('scroll-right');
-    var scrollLeft = document.getElementById('scroll-left');
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-    // When a user clicks on the right arrow, the ul will scroll 750px to the right
-    scrollRight.addEventListener('click', (event) => {
-        imgList.scrollBy(750, 0);
-    });
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
 
-    // When a user clicks on the left arrow, the ul will scroll 750px to the left
-    scrollLeft.addEventListener('click', (event) => {
-        imgList.scrollBy(-750, 0);
-    });
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+
+
 </script>
 
 </html>

@@ -124,7 +124,7 @@ address {
   font-style: normal;
 }
 a {
-  color: #e2e3ed;
+  color: #ffffff;
   text-decoration: none;
 }
 h1 {
@@ -334,10 +334,10 @@ p {
   margin: 10px 20px;
 }
 .services-section h4 {
-  display: inline;
+  display: block;
   list-style: none;
   color: #dde5d5;
-  padding: 25px 0;
+  margin: 0;
 }
 input {
   display: none;
@@ -377,6 +377,10 @@ label {
   visibility: visible;
 }
 #section-6:checked ~ #section-6 > div {
+  display: block;
+  visibility: visible;
+}
+#section-7:checked ~ #section-7 > div {
   display: block;
   visibility: visible;
 }
@@ -675,7 +679,7 @@ footer {
   /* General styles */
   .content-wrapper {
     max-width: 640px;
-    margin: 100px 0;
+    margin: 20px 0;
   }
 
   h2 {
@@ -750,7 +754,6 @@ footer {
   }
 
   .features .features-item-description {
-    width: 62%;
   }
 
   /* Footer */

@@ -384,6 +384,10 @@ label {
   display: block;
   visibility: visible;
 }
+#section-8:checked ~ #section-8 > div {
+  display: block;
+  visibility: visible;
+}
 .icon {
   display: flex;
   justify-content: center;

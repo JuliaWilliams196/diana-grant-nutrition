@@ -132,6 +132,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
   text-align: center;
+  padding: 30px 0 0 0;
 }
 h2 {
   font-family: "Monserrat", sans-serif;
@@ -553,7 +554,7 @@ footer {
   text-align: center;
   flex-direction: column;
 }
- .contact-section span {
+.contact-section span {
   padding: 0 0 50px 0;
 }
 
@@ -737,6 +738,13 @@ footer {
     width: 300px;
     height: 400px;
   }
+
+  .about-nutrition p {
+    text-align: center !important;
+  }
+  .about-me p {
+    text-align: center !important;
+  }
   .footer-info {
     color: #ffffff;
     padding: 0 40px;
@@ -760,7 +768,6 @@ footer {
     flex-flow: column wrap;
     flex-basis: 50%;
   }
-
 
   /* Footer */
   footer .content-wrapper {
